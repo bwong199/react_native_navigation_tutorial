@@ -1,8 +1,11 @@
 import { combineReducers } from 'redux';
 import AuthReducer from './AuthReducer';
-import EmpployeeFormReducer from './EmployeeFormReducer';
+import EmployeeFormReducer from './EmployeeFormReducer';
+import EmployeeReducer from './EmployeeReducer';
 
 export default combineReducers({
     auth: AuthReducer,
-    employeeForm: EmpployeeFormReducer
+    employeeForm: EmployeeFormReducer,
+    employees: EmployeeReducer
+
 })
